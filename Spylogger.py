@@ -1,4 +1,4 @@
-v############  [CODED BY :ANIRUDH] ######### [www.github.com/anii-py] ############### PEACE WITH PYTHON ###############
+############  [CODED BY :ANIRUDH] ######### [www.github.com/anii-py] ############### PEACE WITH PYTHON ###############
 # windows edition
 
 import smtplib         # To send emails
